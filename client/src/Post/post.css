@@ -1,0 +1,15 @@
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card__body{
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid gainsboro;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+}
