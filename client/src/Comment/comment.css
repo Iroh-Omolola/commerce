@@ -1,4 +1,6 @@
-.card__list{
+.card--comment{
     font-size: 15px;
     list-style: disc;
+    flex-direction: column;
+    display: flex;
 }
