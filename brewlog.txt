@@ -1,0 +1,531 @@
++ [[ -z '' ]]
++ [[ -z '' ]]
++ [[ -n '' ]]
++ [[ -n '' ]]
++ export HOMEBREW_UPDATE_TO_TAG=1
++ HOMEBREW_UPDATE_TO_TAG=1
++ [[ -e /usr/local/Cellar ]]
++ [[ ! -w /usr/local/Cellar ]]
++ [[ ! -w /usr/local/Homebrew ]]
++ [[ -n '' ]]
++ [[ -n '' ]]
++ git --version
++ [[ -n '' ]]
++ [[ -f /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git/shallow ]]
++ [[ -f /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/shallow ]]
++ [[ -n '' ]]
++ SHALLOW_COMMAND_PHRASE='This command'
++ SHALLOW_REPO_PHRASE=repository
++ [[ -n '' ]]
++ [[ -n '' ]]
++ export GIT_TERMINAL_PROMPT=0
++ GIT_TERMINAL_PROMPT=0
++ export 'GIT_SSH_COMMAND=ssh -oBatchMode=yes'
++ GIT_SSH_COMMAND='ssh -oBatchMode=yes'
++ [[ -n '' ]]
++ [[ -n '' ]]
++ [[ -z 1 ]]
++ QUIET_ARGS=()
++ [[ -z '' ]]
++ CURL_DISABLE_CURLRC_ARGS=(-q)
++ lock update
++ local name=update
++ local lock_dir=/usr/local/var/homebrew/locks
++ local lock_file=/usr/local/var/homebrew/locks/update
++ [[ -d /usr/local/var/homebrew/locks ]]
++ [[ ! -w /usr/local/var/homebrew/locks ]]
++ exec
++ exec
++ _create_lock 200 update
++ local lock_fd=200
++ local name=update
++ local ruby=/usr/bin/ruby
++ local python=/usr/bin/python
++ [[ -x /usr/bin/ruby ]]
++ [[ -x /usr/bin/python ]]
++ [[ -x /usr/bin/ruby ]]
++ /usr/bin/ruby -e 'exit(RUBY_VERSION >= '\''1.8.7'\'')'
++ /usr/bin/ruby -e 'File.new(200).flock(File::LOCK_EX | File::LOCK_NB) || exit(1)'
++ git_init_if_necessary
++ safe_cd /usr/local/Homebrew
++ cd /usr/local/Homebrew
++ [[ ! -d .git ]]
++ [[ -d /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core ]]
++ safe_cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
++ cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
++ [[ ! -d .git ]]
++ [[ https://github.com/Homebrew/brew != \h\t\t\p\s\:\/\/\g\i\t\h\u\b\.\c\o\m\/\H\o\m\e\b\r\e\w\/\b\r\e\w ]]
++ [[ -d /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core ]]
++ [[ https://github.com/Homebrew/homebrew-core != \h\t\t\p\s\:\/\/\g\i\t\h\u\b\.\c\o\m\/\H\o\m\e\b\r\e\w\/\h\o\m\e\b\r\e\w\-\c\o\r\e ]]
++ [[ -n '' ]]
++ safe_cd /usr/local/Homebrew
++ cd /usr/local/Homebrew
+++ git config homebrew.linuxbrewmigrated
++ [[ '' == \f\a\l\s\e ]]
++ [[ -n '' ]]
++ trap '{ /usr/bin/pkill -P $$; wait; exit 130; }' SIGINT
++ local update_failed_file=/usr/local/Homebrew/.git/UPDATE_FAILED
++ local missing_remote_ref_dirs_file=/usr/local/Homebrew/.git/FAILED_FETCH_DIRS
++ rm -f /usr/local/Homebrew/.git/UPDATE_FAILED
++ rm -f /usr/local/Homebrew/.git/FAILED_FETCH_DIRS
++ for DIR in '"${HOMEBREW_REPOSITORY}"' '"${HOMEBREW_LIBRARY}"/Taps/*/*'
++ [[ -n '' ]]
++ [[ -d /usr/local/Homebrew/.git ]]
++ cd /usr/local/Homebrew
++ [[ -n 1 ]]
++ echo 'Checking if we need to fetch /usr/local/Homebrew...'
+Checking if we need to fetch /usr/local/Homebrew...
+++ repo_var /usr/local/Homebrew
+++ local repo_var
+++ repo_var=/usr/local/Homebrew
+++ [[ /usr/local/Homebrew == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
+++ repo_var=
+++ echo ''
++ TAP_VAR=
+++ upstream_branch
+++ local upstream_branch
++++ git symbolic-ref refs/remotes/origin/HEAD
+++ upstream_branch=refs/remotes/origin/master
+++ [[ -z refs/remotes/origin/master ]]
+++ upstream_branch=master
+++ [[ -z master ]]
+++ echo master
++ UPSTREAM_BRANCH_DIR=master
++ declare UPSTREAM_BRANCH=master
+++ git rev-parse -q --verify refs/remotes/origin/master
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git rev-parse -q --verify refs/remotes/origin/master
++ declare PREFETCH_REVISION=b0a74e532361fab983b596b31509c2e6fd3066c1
++ [[ /usr/local/Homebrew == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
+++ git tag --list
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git tag --list
++ [[ -z 0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.7.1
+0.8
+0.8.1
+0.9
+0.9.1
+0.9.2
+0.9.3
+0.9.4
+0.9.5
+0.9.8
+0.9.9
+1.0.0
+1.0.1
+1.0.2
+1.0.3
+1.0.4
+1.0.5
+1.0.6
+1.0.7
+1.0.8
+1.0.9
+1.1.0
+1.1.1
+1.1.10
+1.1.11
+1.1.12
+1.1.13
+1.1.2
+1.1.3
+1.1.4
+1.1.5
+1.1.6
+1.1.7
+1.1.8
+1.1.9
+1.2.0
+1.2.1
+1.2.2
+1.2.3
+1.2.4
+1.2.5
+1.2.6
+1.3.0
+1.3.1
+1.3.2
+1.3.3
+1.3.4
+1.3.5
+1.3.6
+1.3.7
+1.3.8
+1.3.9
+1.4.0
+1.4.1
+1.4.2
+1.4.3
+1.5.0
+1.5.1
+1.5.10
+1.5.11
+1.5.12
+1.5.13
+1.5.14
+1.5.2
+1.5.3
+1.5.4
+1.5.5
+1.5.6
+1.5.7
+1.5.8
+1.5.9
+1.6.0
+1.6.1
+1.6.10
+1.6.11
+1.6.12
+1.6.13
+1.6.14
+1.6.15
+1.6.16
+1.6.17
+1.6.2
+1.6.3
+1.6.4
+1.6.5
+1.6.6
+1.6.7
+1.6.8
+1.6.9
+1.7.0
+1.7.1
+1.7.2
+1.7.3
+1.7.4
+1.7.5
+1.7.6
+1.7.7
+1.8.0
+1.8.1
+1.8.2
+1.8.3
+1.8.4
+1.8.5
+1.8.6
+1.9.0
+1.9.1
+1.9.2
+1.9.3
+2.0.0
+2.0.1
+2.0.2
+2.0.3
+2.0.4
+2.0.5
+2.0.6
+2.1.0
+2.1.1
+2.1.10
+2.1.11
+2.1.12
+2.1.13
+2.1.14
+2.1.15
+2.1.16
+2.1.2
+2.1.3
+2.1.4
+2.1.5
+2.1.6
+2.1.7
+2.1.8
+2.1.9
+2.2.0
+2.2.1
+2.2.10
+2.2.11
+2.2.12
+2.2.13
+2.2.14
+2.2.15
+2.2.16
+2.2.17
+2.2.2
+2.2.3
+2.2.4
+2.2.5
+2.2.6
+2.2.7
+2.2.8
+2.2.9
+2.3.0
+2.4.0
+2.4.1
+2.4.10
+2.4.11
+2.4.12
+2.4.13
+2.4.14
+2.4.15
+2.4.16
+2.4.2
+2.4.3
+2.4.4
+2.4.5
+2.4.6
+2.4.7
+2.4.8
+2.4.9
+2.5.0
+2.5.1
+2.5.10
+2.5.11
+2.5.12
+2.5.2
+2.5.3
+2.5.4
+2.5.5
+2.5.6
+2.5.7
+2.5.8
+2.5.9
+2.6.0
+2.6.1
+2.6.2
+2.7.0
+2.7.1
+2.7.2
+2.7.3
+2.7.4
+2.7.5
+2.7.6
+2.7.7
+3.0.0
+3.0.1
+3.0.10
+3.0.11
+3.0.2
+3.0.3
+3.0.4
+3.0.5
+3.0.6
+3.0.7
+3.0.8
+3.0.9
+3.1.0
+3.1.1
+3.1.10
+3.1.11
+3.1.12
+3.1.2
+3.1.3
+3.1.4
+3.1.5
+3.1.6
+3.1.7
+3.1.8
+3.1.9
+3.2.0
+3.2.1
+3.2.10
+3.2.11
+3.2.12
+3.2.13
+3.2.14
+3.2.15
+3.2.16
+3.2.17
+3.2.2
+3.2.3
+3.2.4
+3.2.5
+3.2.6
+3.2.7
+3.2.8
+3.2.9
+3.3.0
+3.3.1
+3.3.10
+3.3.11
+3.3.12
+3.3.13
+3.3.14
+3.3.15
+3.3.16
+3.3.2
+3.3.3
+3.3.4
+3.3.5
+3.3.6
+3.3.7
+3.3.8
+3.3.9
+3.4.0
+3.4.1
+3.4.10
+3.4.11
+3.4.2
+3.4.3
+3.4.4
+3.4.5
+3.4.6
+3.4.7
+3.4.8
+3.4.9
+3.5.0
+3.5.1
+3.5.10
+3.5.2
+3.5.3
+3.5.4
+3.5.5
+3.5.6
+3.5.7
+3.5.8
+3.5.9
+3.6.0
+3.6.1
+3.6.10
+3.6.11
+3.6.12
+3.6.13
+3.6.14
+3.6.15
+3.6.16
+3.6.17
+3.6.18
+3.6.19
+3.6.2
+3.6.20
+3.6.21
+3.6.3
+3.6.4
+3.6.5
+3.6.6
+3.6.7
+3.6.8
+3.6.9 ]]
++ [[ -z '' ]]
++ [[ -n '' ]]
++ [[ -n '' ]]
++ for DIR in '"${HOMEBREW_REPOSITORY}"' '"${HOMEBREW_LIBRARY}"/Taps/*/*'
++ [[ -n '' ]]
++ [[ -d /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git ]]
++ cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
++ [[ -n 1 ]]
++ echo 'Checking if we need to fetch /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask...'
+Checking if we need to fetch /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask...
+++ repo_var /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
+++ local repo_var
+++ git config remote.origin.url
+++ repo_var=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask
+++ [[ /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
+++ repo_var=/homebrew/homebrew-cask
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git config remote.origin.url
++++ echo -n /homebrew/homebrew-cask
++++ tr -C A-Za-z0-9 _
++++ tr '[:lower:]' '[:upper:]'
+++ repo_var=_HOMEBREW_HOMEBREW_CASK
+++ echo _HOMEBREW_HOMEBREW_CASK
++ UPSTREAM_REPOSITORY_URL=https://github.com/Homebrew/brew
++ [[ https://github.com/Homebrew/brew == \h\t\t\p\s\:\/\/\g\i\t\h\u\b\.\c\o\m\/* ]]
++ UPSTREAM_REPOSITORY=Homebrew/brew
++ UPSTREAM_REPOSITORY=Homebrew/brew
++ [[ /usr/local/Homebrew == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
++ [[ -n 1 ]]
++ TAP_VAR=_HOMEBREW_HOMEBREW_CASK
+++ sed -n 's/^ETag: "\([a-f0-9]\{32\}\)".*/\1/p' .git/GITHUB_HEADERS
+++ upstream_branch
+++ local upstream_branch
++++ git symbolic-ref refs/remotes/origin/HEAD
++ GITHUB_API_ETAG=
++ GITHUB_API_ACCEPT=application/vnd.github.v3+json
++ GITHUB_API_ENDPOINT=tags
+++ curl -q --silent --max-time 3 --location --no-remote-time --output /dev/null --write-out '%{http_code}' --dump-header /usr/local/Homebrew/.git/GITHUB_HEADERS --user-agent 'Homebrew/3.4.6 (Macintosh; Intel Mac OS X 12.2.1) curl/7.77.0' --header 'Accept: application/vnd.github.v3+json' --header 'If-None-Match: ""' https://api.github.com/repos/Homebrew/brew/tags
+++ [[ -z '' ]]
++++ /usr/local/Homebrew/Library/Homebrew/shims/shared/curl --homebrew=print-path
+++ upstream_branch=refs/remotes/origin/master
+++ [[ -z refs/remotes/origin/master ]]
+++ upstream_branch=master
+++ [[ -z master ]]
+++ echo master
++ UPSTREAM_BRANCH_DIR=master
++ declare UPSTREAM_BRANCH_HOMEBREW_HOMEBREW_CASK=master
+++ git rev-parse -q --verify refs/remotes/origin/master
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git rev-parse -q --verify refs/remotes/origin/master
++ declare PREFETCH_REVISION_HOMEBREW_HOMEBREW_CASK=15c2c1fa53d4c2c4035ec1117bfdb2876e0da445
++ [[ /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
++ [[ -z '' ]]
++ [[ -n '' ]]
++ [[ -n '' ]]
++ for DIR in '"${HOMEBREW_REPOSITORY}"' '"${HOMEBREW_LIBRARY}"/Taps/*/*'
++ [[ -n '' ]]
++ [[ -d /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core/.git ]]
++ cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
++ [[ -n 1 ]]
++ echo 'Checking if we need to fetch /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core...'
+Checking if we need to fetch /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core...
+++ repo_var /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
+++ local repo_var
+++ repo_var=/usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
+++ git config remote.origin.url
+++ [[ /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
+++ repo_var=/homebrew/homebrew-core
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git config remote.origin.url
++++ echo -n /homebrew/homebrew-core
++++ tr -C A-Za-z0-9 _
++++ tr '[:lower:]' '[:upper:]'
+++ repo_var=_HOMEBREW_HOMEBREW_CORE
+++ echo _HOMEBREW_HOMEBREW_CORE
++ UPSTREAM_REPOSITORY_URL=https://github.com/Homebrew/homebrew-cask
++ [[ https://github.com/Homebrew/homebrew-cask == \h\t\t\p\s\:\/\/\g\i\t\h\u\b\.\c\o\m\/* ]]
++ TAP_VAR=_HOMEBREW_HOMEBREW_CORE
++ UPSTREAM_REPOSITORY=Homebrew/homebrew-cask
++ UPSTREAM_REPOSITORY=Homebrew/homebrew-cask
++ [[ /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask == \/\u\s\r\/\l\o\c\a\l\/\H\o\m\e\b\r\e\w ]]
+++ upstream_branch
+++ local upstream_branch
+++ git rev-parse refs/remotes/origin/master
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git rev-parse refs/remotes/origin/master
++++ git symbolic-ref refs/remotes/origin/HEAD
+++ CURL_EXECUTABLE=/usr/bin/curl
+++ /usr/bin/curl -q --silent --max-time 3 --location --no-remote-time --output /dev/null --write-out '%{http_code}' --dump-header /usr/local/Homebrew/.git/GITHUB_HEADERS --user-agent 'Homebrew/3.4.6 (Macintosh; Intel Mac OS X 12.2.1) curl/7.77.0' --header 'Accept: application/vnd.github.v3+json' --header 'If-None-Match: ""' https://api.github.com/repos/Homebrew/brew/tags
++ GITHUB_API_ETAG=15c2c1fa53d4c2c4035ec1117bfdb2876e0da445
++ GITHUB_API_ACCEPT=application/vnd.github.v3.sha
++ GITHUB_API_ENDPOINT=commits/master
+++ upstream_branch=
+++ [[ -z '' ]]
+++ git remote set-head origin --auto
+++ [[ -z /Library/Developer/CommandLineTools/usr/bin/git ]]
+++ /Library/Developer/CommandLineTools/usr/bin/git remote set-head origin --auto
+++ curl -q --silent --max-time 3 --location --no-remote-time --output /dev/null --write-out '%{http_code}' --dump-header /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/GITHUB_HEADERS --user-agent 'Homebrew/3.4.6 (Macintosh; Intel Mac OS X 12.2.1) curl/7.77.0' --header 'Accept: application/vnd.github.v3.sha' --header 'If-None-Match: "15c2c1fa53d4c2c4035ec1117bfdb2876e0da445"' https://api.github.com/repos/Homebrew/homebrew-cask/commits/master
+++ [[ -z '' ]]
++++ /usr/local/Homebrew/Library/Homebrew/shims/shared/curl --homebrew=print-path
+++ CURL_EXECUTABLE=/usr/bin/curl
+++ /usr/bin/curl -q --silent --max-time 3 --location --no-remote-time --output /dev/null --write-out '%{http_code}' --dump-header /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/GITHUB_HEADERS --user-agent 'Homebrew/3.4.6 (Macintosh; Intel Mac OS X 12.2.1) curl/7.77.0' --header 'Accept: application/vnd.github.v3.sha' --header 'If-None-Match: "15c2c1fa53d4c2c4035ec1117bfdb2876e0da445"' https://api.github.com/repos/Homebrew/homebrew-cask/commits/master
++ UPSTREAM_SHA_HTTP_CODE=304
++ [[ -f /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/FETCH_HEAD ]]
++ touch /usr/local/Homebrew/Library/Taps/homebrew/homebrew-cask/.git/FETCH_HEAD
++ [[ -z '' ]]
++ [[ 304 == \3\0\4 ]]
++ exit
++ UPSTREAM_SHA_HTTP_CODE=200
++ [[ -f /usr/local/Homebrew/.git/FETCH_HEAD ]]
++ touch /usr/local/Homebrew/.git/FETCH_HEAD
++ [[ -z '' ]]
++ [[ 200 == \3\0\4 ]]
++ [[ -n 1 ]]
++ echo 'Fetching /usr/local/Homebrew...'
+Fetching /usr/local/Homebrew...
++ local tmp_failure_file=/usr/local/Homebrew/.git/TMP_FETCH_FAILURES
++ rm -f /usr/local/Homebrew/.git/TMP_FETCH_FAILURES
++ [[ -n 1 ]]
++ git fetch --tags --force origin refs/heads/master:refs/remotes/origin/master
++ rm -f /usr/local/Homebrew/.git/TMP_FETCH_FAILURES
++ UPSTREAM_BRANCH_DIR=
+++ /usr/bin/pkill -P 51084
+++ wait
+++ exit 130

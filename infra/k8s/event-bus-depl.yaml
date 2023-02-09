@@ -1,31 +1,30 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: event-depl
-spec: 
+  name: event-bus-depl
+spec:
   replicas: 1
   selector:
     matchLabels:
-      app: event
+      app: event-bus
   template:
     metadata:
       labels:
-        app: event
+        app: event-bus
     spec:
       containers:
-        - name: event
-          image: omolola1/event
-
+        - name: event-bus
+          image: omolola@1/event-bus-85
 ---
 apiVersion: v1
 kind: Service
-metadata: 
-  name: event-srv
+metadata:
+  name: event-bus-srv
 spec:
   selector:
-    app: event
+    app: event-bus
   ports:
-    - name: event
+    - name: event-bus
       protocol: TCP
       port: 4005
       targetPort: 4005
